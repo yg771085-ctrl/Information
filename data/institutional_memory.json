@@ -1,27 +1,8 @@
 {
-  "knowledgeVersion": 3,
-  "lastUpdated": "2026-09-15T00:56:57.357Z",
-  "lastSyncedCommit": null,
+  "knowledgeVersion": 4,
+  "lastUpdated": "2026-09-15T01:27:52.633Z",
+  "lastSyncedCommit": "efede6c81419edd380a062481a469d6079ed911c",
   "records": [
-    {
-      "id": "KNOW-000005",
-      "title": "Self-Test Ephemeral Knowledge Record 1789433661957",
-      "summary": "Deterministic zero-copy ring buffer prevents memory fragmentation during high-throughput ingestion run 1789433817355.",
-      "details": "Evaluated ring buffer with aligned 64-byte chunks for run 1789433817355. Eliminated GC pressure under 50,000 packets per second.",
-      "category": "engineering",
-      "source": "Self-Test Suite Validator",
-      "sourceUrls": [],
-      "verificationStatus": "VERIFIED",
-      "confidence": 0.99,
-      "createdAt": "2026-09-15T00:54:21.958Z",
-      "updatedAt": "2026-09-15T00:56:57.357Z",
-      "relatedTasks": [],
-      "tags": [
-        "selftest",
-        "ringbuffer",
-        "zerocopy"
-      ]
-    },
     {
       "id": "KNOW-000001",
       "title": "Distributed Consensus Rate Limiting via Leaky Bucket and Atomic Decrement",
@@ -119,5 +100,5 @@
     }
   ],
   "conflicts": [],
-  "pendingChangesCount": 2
+  "pendingChangesCount": 1
 }
