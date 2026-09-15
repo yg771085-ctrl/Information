@@ -1,0 +1,37 @@
+{
+  "projectId": "PROJECT-000002",
+  "name": "Zero-Copy Circular Ring Buffer",
+  "description": "High-performance lock-free ring buffer for inter-agent IPC",
+  "status": "PLANNING",
+  "createdAt": "2026-09-15T09:00:03.031Z",
+  "updatedAt": "2026-09-15T09:00:03.031Z",
+  "createdBy": "MANAGER",
+  "agents": [
+    "MANAGER"
+  ],
+  "tasks": [],
+  "files": [
+    {
+      "path": "project.json",
+      "size": 874,
+      "lastModified": "2026-09-15T09:00:03.032Z",
+      "category": "config"
+    },
+    {
+      "path": "README.md",
+      "size": 430,
+      "lastModified": "2026-09-15T09:00:03.031Z",
+      "category": "config"
+    }
+  ],
+  "tests": [],
+  "knowledgeExtracted": [],
+  "github": {
+    "repository": "Information",
+    "branch": "main",
+    "path": "projects/PROJECT-000002",
+    "syncStatus": "PENDING",
+    "lastSyncedCommit": null,
+    "lastSyncAttempt": null
+  }
+}
