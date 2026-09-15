@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "knowledgeVersion": 5,
+  "lastUpdated": "2026-09-15T01:47:13.418Z",
+  "lastSyncedCommit": "fc165b29f36015c4a42c83b0166467bb0c8da54b",
+  "knowledge": [
+    {
+      "id": "KNOW-000001",
+      "title": "Distributed Consensus Rate Limiting via Leaky Bucket and Atomic Decrement",
+      "summary": "Leaky bucket paired with atomic decrement eliminates network clock race conditions under high concurrent volume.",
+      "details": "Token bucket synchronization across asynchronous worker nodes failed due to timestamp clock jitter. Replacing local counters with atomic decrements and local fallback caches reduced contention by 92% and zeroed dropped requests under 10,000 req/sec.",
+      "category": "engineering",
+      "source": "Distributed Architecture Validation Test",
+      "sourceUrls": [
+        "https://redis.io/docs/manual/patterns/distributed-locks/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.98,
+      "createdAt": "2026-09-12T00:54:12.633Z",
+      "updatedAt": "2026-09-12T00:54:12.633Z",
+      "relatedTasks": [
+        "Distributed State & Rate Limiter Optimization"
+      ],
+      "tags": [
+        "distributed-systems",
+        "concurrency",
+        "rate-limiting",
+        "redis"
+      ]
+    },
+    {
+      "id": "KNOW-000002",
+      "title": "Adversarial Prompt Injection Defense in Untrusted Research Pipelines",
+      "summary": "Multi-layer sanitization with boundary encapsulation and passive quotation prevents untrusted web scrapes from executing instructions.",
+      "details": "Untrusted HTML scrapes containing embedded instructions (\"ignore previous instructions\") bypassed raw regex tag removal. Enclosing external payloads in strictly passive, JSON-delimited inert quotes with token stripping eliminated 100% of benchmark prompt injection attempts without key leakage.",
+      "category": "research",
+      "source": "Security Boundary Benchmark Suite",
+      "sourceUrls": [
+        "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.99,
+      "createdAt": "2026-09-13T00:54:12.633Z",
+      "updatedAt": "2026-09-13T00:54:12.633Z",
+      "relatedTasks": [
+        "Prompt Injection Defense & Untrusted Research Scrapes"
+      ],
+      "tags": [
+        "security",
+        "prompt-injection",
+        "sanitization",
+        "llm-safety"
+      ]
+    },
+    {
+      "id": "KNOW-000003",
+      "title": "SIMD-Accelerated Dilithium Lattice Signature Verification",
+      "summary": "Batch vectorization over NTT polynomial rings yields 4.2x verification speedup for quantum-resistant Dilithium3 signatures.",
+      "details": "Standard scalar multiplication in module lattices produces significant memory bus saturation. Transposing signature vectors into contiguous AVX2 / NEON 256-bit SIMD registers allows simultaneous NTT transformations for up to 8 signatures concurrently.",
+      "category": "invention",
+      "source": "Post-Quantum Cryptography Implementation Study",
+      "sourceUrls": [
+        "https://pq-crystals.org/dilithium/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.95,
+      "createdAt": "2026-09-14T00:54:12.633Z",
+      "updatedAt": "2026-09-14T00:54:12.633Z",
+      "relatedTasks": [
+        "SIMD-Accelerated Quantum-Resistant Dilithium Signature Batch Verification Engine"
+      ],
+      "tags": [
+        "cryptography",
+        "quantum-resistant",
+        "simd",
+        "dilithium",
+        "algorithms"
+      ]
+    },
+    {
+      "id": "KNOW-000004",
+      "title": "Merkle Patricia Trie Pruning Invariance Failure Modes",
+      "summary": "Pruning state nodes by isolated hash without traversing parent-child links corrupts cryptographic proof chains.",
+      "details": "During state trie garbage collection, deleting unreferenced node hashes directly caused orphan leaves. MPTs require reference-counted directed acyclic graph traversals before marking nodes as prune-safe.",
+      "category": "lesson",
+      "source": "Blockchain Storage Trie Audit",
+      "sourceUrls": [],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.97,
+      "createdAt": "2026-09-14T12:54:12.633Z",
+      "updatedAt": "2026-09-14T12:54:12.633Z",
+      "relatedTasks": [
+        "Persistent Storage & State Pruning Verification"
+      ],
+      "tags": [
+        "merkle-trie",
+        "storage",
+        "data-integrity",
+        "failure-analysis"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "KNOW-000001",
+      "title": "Distributed Consensus Rate Limiting via Leaky Bucket and Atomic Decrement",
+      "summary": "Leaky bucket paired with atomic decrement eliminates network clock race conditions under high concurrent volume.",
+      "details": "Token bucket synchronization across asynchronous worker nodes failed due to timestamp clock jitter. Replacing local counters with atomic decrements and local fallback caches reduced contention by 92% and zeroed dropped requests under 10,000 req/sec.",
+      "category": "engineering",
+      "source": "Distributed Architecture Validation Test",
+      "sourceUrls": [
+        "https://redis.io/docs/manual/patterns/distributed-locks/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.98,
+      "createdAt": "2026-09-12T00:54:12.633Z",
+      "updatedAt": "2026-09-12T00:54:12.633Z",
+      "relatedTasks": [
+        "Distributed State & Rate Limiter Optimization"
+      ],
+      "tags": [
+        "distributed-systems",
+        "concurrency",
+        "rate-limiting",
+        "redis"
+      ]
+    },
+    {
+      "id": "KNOW-000002",
+      "title": "Adversarial Prompt Injection Defense in Untrusted Research Pipelines",
+      "summary": "Multi-layer sanitization with boundary encapsulation and passive quotation prevents untrusted web scrapes from executing instructions.",
+      "details": "Untrusted HTML scrapes containing embedded instructions (\"ignore previous instructions\") bypassed raw regex tag removal. Enclosing external payloads in strictly passive, JSON-delimited inert quotes with token stripping eliminated 100% of benchmark prompt injection attempts without key leakage.",
+      "category": "research",
+      "source": "Security Boundary Benchmark Suite",
+      "sourceUrls": [
+        "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.99,
+      "createdAt": "2026-09-13T00:54:12.633Z",
+      "updatedAt": "2026-09-13T00:54:12.633Z",
+      "relatedTasks": [
+        "Prompt Injection Defense & Untrusted Research Scrapes"
+      ],
+      "tags": [
+        "security",
+        "prompt-injection",
+        "sanitization",
+        "llm-safety"
+      ]
+    },
+    {
+      "id": "KNOW-000003",
+      "title": "SIMD-Accelerated Dilithium Lattice Signature Verification",
+      "summary": "Batch vectorization over NTT polynomial rings yields 4.2x verification speedup for quantum-resistant Dilithium3 signatures.",
+      "details": "Standard scalar multiplication in module lattices produces significant memory bus saturation. Transposing signature vectors into contiguous AVX2 / NEON 256-bit SIMD registers allows simultaneous NTT transformations for up to 8 signatures concurrently.",
+      "category": "invention",
+      "source": "Post-Quantum Cryptography Implementation Study",
+      "sourceUrls": [
+        "https://pq-crystals.org/dilithium/"
+      ],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.95,
+      "createdAt": "2026-09-14T00:54:12.633Z",
+      "updatedAt": "2026-09-14T00:54:12.633Z",
+      "relatedTasks": [
+        "SIMD-Accelerated Quantum-Resistant Dilithium Signature Batch Verification Engine"
+      ],
+      "tags": [
+        "cryptography",
+        "quantum-resistant",
+        "simd",
+        "dilithium",
+        "algorithms"
+      ]
+    },
+    {
+      "id": "KNOW-000004",
+      "title": "Merkle Patricia Trie Pruning Invariance Failure Modes",
+      "summary": "Pruning state nodes by isolated hash without traversing parent-child links corrupts cryptographic proof chains.",
+      "details": "During state trie garbage collection, deleting unreferenced node hashes directly caused orphan leaves. MPTs require reference-counted directed acyclic graph traversals before marking nodes as prune-safe.",
+      "category": "lesson",
+      "source": "Blockchain Storage Trie Audit",
+      "sourceUrls": [],
+      "verificationStatus": "VERIFIED",
+      "confidence": 0.97,
+      "createdAt": "2026-09-14T12:54:12.633Z",
+      "updatedAt": "2026-09-14T12:54:12.633Z",
+      "relatedTasks": [
+        "Persistent Storage & State Pruning Verification"
+      ],
+      "tags": [
+        "merkle-trie",
+        "storage",
+        "data-integrity",
+        "failure-analysis"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "pendingChangesCount": 0
+}
